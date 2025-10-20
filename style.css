@@ -57,7 +57,7 @@ body{
   gap:0.75rem;
 }
 .nav a{ text-decoration:none;color:var(--muted); font-size:0.95rem; padding:0.35rem 0.5rem; }
-.nav a:hover{ color: #0b1220; }
+.nav a:hover{ color: #0b1220; font-weight: bold; color: #6c9ef8}
 .btn{
   display:inline-block;
   background:var(--accent);
