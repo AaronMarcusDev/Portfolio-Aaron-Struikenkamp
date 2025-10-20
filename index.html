@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aaron Struikenkamp CreaTe Portfolio</title>
+  <meta name="description"
+    content="Portfolio van [Jouw Naam], Creative Technology student — overzicht van projecten en leerervaringen van 3 jaar CreaTe." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Aaron Struikenkamp</h1>
+        <p class="tagline">Creative Technology student</p>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-outline" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Hi, I'm <span class="accent">Aaron Struikenkamp</span></h2>
+          <p>I build interactive projects and explore design & engineering during my Creative Technology studies.</p>
+          <p class="small">This portfolio shows highlights from my study Creative Technology at the University of
+            Twente.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#timeline">See Timeline</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- Replace with your photo or a project image -->
+          <img src="images/profile.jpg" alt="Aaron Profile" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h3 class="blue">About me</h3>
+        <p>
+          I'm a <b>Creative Technology</b> student at the <b>University of Twente</b>. In this study I (will) expore
+          interaction design, prototyping, programming, and collaborative project work. I am a true problem-solver, I
+          can get lost in thought easily and I come up with interesting technological solutions for existing problems.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill">
+            <h4>Core skills</h4>
+            <p>App development, 3D Design, Programming, Mathematics, Making user-oriented solutions</p>
+          </div>
+          <div class="skill">
+            <h4>Tools</h4>
+            <p>Processing, HTML/CSS/JS, Dart, Flutter, Fusion and Shapr3D</p>
+          </div>
+          <div class="skill">
+            <h4>Interests</h4>
+            <p>Mechanical design, computing, sustainable tech and engineering.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h3 class="blue">Projects</h3>
+        <p class="muted">Here are some interesting projects I contributed to. Click "Read more" for details.</p>
+
+        <div class="projects-grid">
+          <!-- Year 1 project example -->
+          <!-- <article class="project-card">
+            <img src="https://via.placeholder.com/600x360?text=Year+1+Project" alt="Year 1 project thumbnail" />
+            <div class="project-content">
+              <h4>Design for Behaviour Change</h4>
+              <p class="muted">Role: Research, Videographer & Editor</p>
+              <p>A video displaying the negative effects of video game addiction.</p>
+              <div class="project-actions">
+                <a href="#" class="btn btn-small" onclick="openModal(event, 'modal-yr1')">Read more</a>
+                <a href="#" class="btn btn-small btn-outline">View repo</a>
+              </div>
+          </article> -->
+          <article class="project-card">
+            <img src="images/wcit.png" alt="Year 1 project thumbnail" />
+            <div class="project-content">
+              <h4>Whale Clean It Up!</h4>
+              <p class="muted">Role: Programmer & Designer</p>
+              <p>A simple game about keeping the ocean clean.</p>
+              <div class="project-actions">
+                <a href="#" class="btn btn-small" onclick="openModal(event, 'wcit')">Read more</a>
+                <a href="https://github.com/AaronMarcusDev/Whale-Clean-It-Up/" class="btn btn-small btn-outline">View
+                  repo</a>
+              </div>
+            </div>
+          </article>
+        </div> <!-- sluit .projects-grid -->
+      </div> <!-- sluit .container -->
+    </section> <!-- sluit #projects -->
+
+    <!-- Timeline -->
+    <section id="timeline" class="section">
+      <div class="container">
+        <h3 class="blue">Timeline</h3>
+        <ol class="timeline">
+          <li>
+            <strong>Year 1: Module 1 'Foundations of CreaTe'</strong>
+            <p>Intro projects, basic prototyping, programming, teamwork, first exposure to physical computing and design
+              thinking.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-grid">
+        <div>
+          <h3 class="blue">Contact</h3>
+          <p>Interested in collaborating or want to see more? Reach out:</p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:aaronstruikenkamp@gmail.com">aaronstruikenkamp@gmail.com</a>
+            </li>
+            <li><strong>Socials</strong> <a href="https://nl.linkedin.com/in/aaron-struikenkamp-b271b0269"
+                target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/AaronMarcusDev" target="_blank"
+                rel="noopener">AaronMarcusDev</a></li>
+          </ul>
+        </div>
+        <!-- <form class="contact-form" action="#" onsubmit="alert('Form demo — replace action with your backend or remove.'); return false;">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="Hi, I'd like to..." required></textarea>
+          </label>
+          <button class="btn" type="submit">Send message</button>
+        </form> -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Aaron Struikenkamp | Portfolio Creative Technology</p>
+    </div>
+  </footer>
+
+  <!-- Modals for project details (simple) -->
+  <div id="wcit" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('wcit')" aria-label="close">✕</button>
+      <h2 class="blue">Whale Clean It Up</h2>
+      <p><strong>What: </strong>A game made solely in Processing about a whale cleaning the ocean.</p>
+      <p><strong>My role: </strong>Ideation, Programming, Release</p>
+      <p><strong>What I learned: </strong>How to use Processing for creating 2d animations, sprites and game mechanics.
+      </p>
+    </div>
+  </div>
+
+  <!-- <div id="modal-yr2" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal-yr2')" aria-label="close">✕</button>
+      <h4>Year 2 — UX Case: "Study Buddy App"</h4>
+      <p><strong>What:</strong> App concept to manage study groups and resources.</p>
+      <p><strong>My role:</strong> Conducted interviews, created wireframes and high-fidelity prototype, organized usability tests.</p>
+      <p><strong>What I learned:</strong> User research methods, prototype iteration, presenting findings and design rationale.</p>
+    </div>
+  </div> -->
+
+  <script>
+    // small helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+
+    function openModal(e, id) {
+      e.preventDefault();
+      const m = document.getElementById(id);
+      m.setAttribute('aria-hidden', 'false');
+      m.classList.add('open');
+    }
+    function closeModal(id) {
+      const m = document.getElementById(id);
+      m.setAttribute('aria-hidden', 'true');
+      m.classList.remove('open');
+    }
+    // close on escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal.open').forEach(m => {
+          m.setAttribute('aria-hidden', 'true');
+          m.classList.remove('open');
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
