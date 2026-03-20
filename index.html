@@ -5,8 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Aaron Struikenkamp CreaTe Portfolio</title>
-  <meta name="description"
-    content="Portfolio van Aaorn Struikenkamp, Creative Technology student" />
+  <meta name="description" content="Portfolio van Aaorn Struikenkamp, Creative Technology student" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
@@ -47,7 +46,6 @@
           </div>
         </div>
         <div class="hero-image">
-          <!-- Replace with your photo or a project image -->
           <img src="images/profile.jpg" alt="Aaron Profile" />
         </div>
       </div>
@@ -58,7 +56,8 @@
       <div class="container">
         <h3 class="blue">About me</h3>
         <p>
-          I'm a <b class="blue">Creative Technology</b> student at the <b class="blue">University of Twente</b>. In this study I (will) expore
+          I'm a <b class="blue">Creative Technology</b> student at the <b class="blue">University of Twente</b>. In this
+          study I explore
           interaction design, prototyping, programming, and collaborative project work. I am a true problem-solver, I
           can get lost in thought easily and I come up with interesting technological solutions for existing problems.
         </p>
@@ -66,15 +65,15 @@
         <div class="skills-grid">
           <div class="skill">
             <h4 class="blue">Core skills</h4>
-            <p>App development, 3D Design, Programming, Mathematics, Making user-oriented solutions</p>
+            <p>(Mobile) App development, 3D Design, Programming, Mathematics, Making user-oriented solutions</p>
           </div>
           <div class="skill">
             <h4 class="blue">Tools</h4>
-            <p>Processing, HTML/CSS/JS, Dart, Flutter, Fusion and Shapr3D</p>
+            <p>Processing, HTML/CSS/JS, Dart, Flutter, Fusion and Blender</p>
           </div>
           <div class="skill">
             <h4 class="blue">Interests</h4>
-            <p>Mechanical design, computing, sustainable tech and engineering.</p>
+            <p>Design, computer science, sustainable tech and engineering.</p>
           </div>
         </div>
       </div>
@@ -103,12 +102,26 @@
             <img src="images/wcit.png" alt="Year 1 project thumbnail" />
             <div class="project-content">
               <h4>Whale Clean It Up!</h4>
-              <p class="muted">Role: Programmer & Designer</p>
+              <p class="muted">Roles: Programmer & Designer</p>
               <p>A simple game about keeping the ocean clean.</p>
               <div class="project-actions">
                 <a href="#" class="btn btn-small" onclick="openModal(event, 'wcit')">Read more</a>
                 <a href="https://github.com/AaronMarcusDev/Whale-Clean-It-Up/" class="btn btn-small btn-outline">View
                   repo</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="images/DISK.png" alt="Year 1 project thumbnail" />
+            <div class="project-content">
+              <h4>VisualDisk: A DISK Prototype System</h4>
+              <p class="muted">Roles: Systems Engineer & Programmer</p>
+              <p>A digital and physical system to visualise data from the DISK system used by Rijkswaterstaat.</p>
+              <div class="project-actions">
+                <a href="#" class="btn btn-small" onclick="openModal(event, 'DISK')">Read more</a>
+                <a href="https://github.com/AaronMarcusDev/disk-but-better" class="btn btn-small btn-outline">View
+                  repo</a>
+                <a href="https://disk-prototype.streamlit.app/" class="btn btn-small btn-outline">Open site</a>
               </div>
             </div>
           </article>
@@ -122,9 +135,17 @@
         <h3 class="blue">Timeline</h3>
         <ol class="timeline">
           <li>
-            <strong>Year 1: Module 1 'Foundations of CreaTe'</strong>
+            <strong>Module 1: 'Foundations of CreaTe'</strong>
             <p>Intro projects, basic prototyping, programming, teamwork, first exposure to physical computing and design
               thinking.</p>
+          </li>
+          <li>
+            <strong>Module 2: 'Smart Environments'</strong>
+            <p>We covered electrical engineering, smart environment design and physical computing.</p>
+          </li>
+          <li>
+            <strong>Module 3: 'Living & Working Tomorrow'</strong>
+            <p>Working with real clients while gaining knownledge on mathematics, physics and human-centered design.</p>
           </li>
         </ol>
       </div>
@@ -171,6 +192,7 @@
   </footer>
 
   <!-- Modals for project details (simple) -->
+  <!-- Whale Clean it Up! -->
   <div id="wcit" class="modal" aria-hidden="true" role="dialog">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('wcit')" aria-label="close">✕</button>
@@ -178,6 +200,17 @@
       <p><strong>What: </strong>A game made solely in Processing about a whale cleaning the ocean.</p>
       <p><strong>My role: </strong>Ideation, Programming, Release</p>
       <p><strong>What I learned: </strong>How to use Processing for creating 2d animations, sprites and game mechanics.
+      </p>
+    </div>
+  </div>
+  <!-- VisualDisk -->
+  <div id="DISK" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('wcit')" aria-label="close">✕</button>
+      <h2 class="blue">VisualDisk</h2>
+      <p><strong>What: </strong>A digital and physical system to visualise data from the DISK system used by Rijkswaterstaat.</p>
+      <p><strong>My role: </strong>Systems Engineer & Programmer</p>
+      <p><strong>What I learned: </strong>I gained a lot of insights into the role of systems engineer, I gained experience working with a client (Rijkwaterstaat) and improved my collaboration skills.
       </p>
     </div>
   </div>
