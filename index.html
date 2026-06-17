@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Aaron Struikenkamp CreaTe Portfolio</title>
   <meta name="description" content="Portfolio van Aaron Struikenkamp, Creative Technology student" />
-  <meta name="description" content="Portfolio van Aaron Struikenkamp, Creative Technology student" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
@@ -59,8 +58,6 @@
         <p>
           I'm a <b class="blue">Creative Technology</b> student at the <b class="blue">University of Twente</b>. In this
           study I explore
-          I'm a <b class="blue">Creative Technology</b> student at the <b class="blue">University of Twente</b>. In this
-          study I explore
           interaction design, prototyping, programming, and collaborative project work. I am a true problem-solver, I
           can get lost in thought easily and I come up with interesting technological solutions for existing problems.
         </p>
@@ -88,70 +85,104 @@
         <h3 class="blue">Projects</h3>
         <p class="muted">Here are some interesting projects I contributed to. Click "Read more" for details.</p>
 
-        <!-- Module 3 -->
-        <h4 class="blue project-group-label">Module 3 — Living &amp; Working Tomorrow</h4>
+        <!-- Module 4 -->
+        <h4 class="blue project-group-label">Module 4 — Art, Impact & Technology</h4>
+        <article class="project-card">
+          <img src="images/flocking-birds.png" alt="3D Flocking Bird Game thumbnail" />
+          <div class="project-content">
+            <h4>3D Flocking Bird Game</h4>
+            <p class="muted">Role: Programmer — Algorithms</p>
+            <p>An interactive 3D ecosystem with flocking birds, procedurally generated terrain, and physics-based rock
+              throwing.</p>
+            <div class="project-actions">
+              <a href="#" class="btn btn-small" onclick="openModal(event, 'flocking')">Read more</a>
+              <a href="https://github.com/AaronMarcusDev/Algorithms-Flocking" class="btn btn-small btn-outline">View
+                repo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Module 3 -->
+      <h4 class="blue project-group-label">Module 3 — Living &amp; Working Tomorrow</h4>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="images/DISK.png" alt="3Disk project thumbnail" />
+          <div class="project-content">
+            <h4>3Disk: A DISK Prototype System</h4>
+            <p class="muted">Roles: Systems Engineer &amp; Programmer</p>
+            <p>A digital and physical system to visualise data from the DISK system used by Rijkswaterstaat.</p>
+            <div class="project-actions">
+              <a href="#" class="btn btn-small" onclick="openModal(event, 'DISK')">Read more</a>
+              <a href="https://github.com/AaronMarcusDev/disk-but-better" class="btn btn-small btn-outline">View
+                repo</a>
+              <a href="https://disk-prototype.streamlit.app/" class="btn btn-small btn-outline">Open site</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/martial-tracker.png" alt="Martial Arts Tracker thumbnail" />
+          <div class="project-content">
+            <h4>Martial Arts Kick Tracker</h4>
+            <p class="muted">Role: Product & Circuit Designer — Professional Development</p>
+            <p>A wireless Wi-Fi-based tracker for sparring &amp; training sessions, with visualisation of kick data to
+              support athletes' development.</p>
+            <div class="project-actions">
+              <a href="#" class="btn btn-small" onclick="openModal(event, 'martial')">Read more</a>
+              <a href="https://github.com/AaronMarcusDev/Martial-Arts-Tracker" class="btn btn-small btn-outline">View
+                repo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Module 2 -->
+      <h4 class="blue project-group-label">Module 2 — Smart Environments</h4>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="images/wcit.png" alt="Whale Clean It Up thumbnail" />
+          <div class="project-content">
+            <h4>Whale Clean It Up!</h4>
+            <p class="muted">Roles: Programmer &amp; Designer</p>
+            <p>A simple game about keeping the ocean clean.</p>
+            <div class="project-actions">
+              <a href="#" class="btn btn-small" onclick="openModal(event, 'wcit')">Read more</a>
+              <a href="https://github.com/AaronMarcusDev/Whale-Clean-It-Up/" class="btn btn-small btn-outline">View
+                repo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/ultrasonic-flappy.png" alt="Ultrasonic Flappy Bird thumbnail" />
+          <div class="project-content">
+            <h4>Ultrasonic Flappy Bird</h4>
+            <p class="muted">Roles: Programmer &amp; Hardware — Programming &amp; Physical Computing</p>
+            <p>A hands-free Flappy Bird controlled by waving your hand over an ultrasonic distance sensor connected to
+              an Arduino, with wireless multiplayer support via Processing.</p>
+            <div class="project-actions">
+              <a href="#" class="btn btn-small" onclick="openModal(event, 'flappy')">Read more</a>
+              <a href="https://github.com/AaronMarcusDev/Ultrasonic-flappy-bird/" class="btn btn-small btn-outline">View
+                repo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Personal Projects -->
+        <h4 class="blue project-group-label">Personal Projects</h4>
         <div class="projects-grid">
           <article class="project-card">
-            <img src="images/DISK.png" alt="3Disk project thumbnail" />
+            <img src="images/betermarkt.png" alt="BeterMarkt thumbnail" />
             <div class="project-content">
-              <h4>3Disk: A DISK Prototype System</h4>
-              <p class="muted">Roles: Systems Engineer &amp; Programmer</p>
-              <p>A digital and physical system to visualise data from the DISK system used by Rijkswaterstaat.</p>
+              <h4>BeterMarkt</h4>
+              <p class="muted">Role: Solo Developer</p>
+              <p>An improved search engine for Marktplaats that automatically filters out ads and irrelevant listings,
+                making second-hand shopping dramatically more efficient.</p>
               <div class="project-actions">
-                <a href="#" class="btn btn-small" onclick="openModal(event, 'DISK')">Read more</a>
-                <a href="https://github.com/AaronMarcusDev/disk-but-better" class="btn btn-small btn-outline">View
-                  repo</a>
-                <a href="https://disk-prototype.streamlit.app/" class="btn btn-small btn-outline">Open site</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img src="images/martial-tracker.png">
-            <div class="project-content">
-              <h4>Martial Arts Kick Tracker</h4>
-              <p class="muted">Role: Product & Circuit Designer  — Professional Development</p>
-              <p>A wireless Wi-Fi-based tracker for sparring &amp; training sessions, with visualisation of kick data to
-                support athletes' development.</p>
-              <div class="project-actions">
-                <a href="#" class="btn btn-small" onclick="openModal(event, 'martial')">Read more</a>
-                <a href="https://github.com/AaronMarcusDev/Martial-Arts-Tracker" class="btn btn-small btn-outline">View
-                  repo</a>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <!-- Module 2 -->
-        <h4 class="blue project-group-label">Module 2 — Smart Environments</h4>
-        <div class="projects-grid">
-          <article class="project-card">
-            <img src="images/wcit.png" alt="Whale Clean It Up thumbnail" />
-            <img src="images/wcit.png" alt="Whale Clean It Up thumbnail" />
-            <div class="project-content">
-              <h4>Whale Clean It Up!</h4>
-              <p class="muted">Roles: Programmer &amp; Designer</p>
-              <p>A simple game about keeping the ocean clean.</p>
-              <div class="project-actions">
-                <a href="#" class="btn btn-small" onclick="openModal(event, 'wcit')">Read more</a>
-                <a href="https://github.com/AaronMarcusDev/Whale-Clean-It-Up/" class="btn btn-small btn-outline">View
-                  repo</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- 3D Flocking Bird Game (Algorithms) -->
-          <article class="project-card">
-            <img src="images/flocking-birds.png" alt="3D Flocking Bird Game thumbnail" />
-            <div class="project-content">
-              <h4>3D Flocking Bird Game</h4>
-              <p class="muted">Role: Programmer</p>
-              <p>An interactive 3D ecosystem with flocking birds, procedurally generated terrain, and physics-based rock
-                throwing.</p>
-              <div class="project-actions">
-                <a href="#" class="btn btn-small" onclick="openModal(event, 'flocking')">Read more</a>
-                <a href="https://github.com/AaronMarcusDev/Algorithms-Flocking" class="btn btn-small btn-outline">View
-                  repo</a>
+                <a href="#" class="btn btn-small" onclick="openModal(event, 'betermarkt')">Read more</a>
+                <a href="https://github.com/AaronMarcusDev/BeterMarkt" class="btn btn-small btn-outline">View repo</a>
+                <a href="https://betermarkt.streamlit.app/" class="btn btn-small btn-outline">Open site</a>
               </div>
             </div>
           </article>
@@ -165,7 +196,6 @@
         <h3 class="blue">Timeline</h3>
         <ol class="timeline">
           <li>
-            <strong>Module 1: 'Foundations of CreaTe'</strong>
             <strong>Module 1: 'Foundations of CreaTe'</strong>
             <p>Intro projects, basic prototyping, programming, teamwork, first exposure to physical computing and design
               thinking.</p>
@@ -182,7 +212,7 @@
             </p>
           </li>
           <li>
-            <strong>Module 4 'Algorithms'</strong>
+            <strong>Module 4: 'Art, Impact & Technology'</strong>
             <p>Explored physics-based algorithms including flocking systems, particle systems, Perlin noise terrain
               generation, and force-based interactions. Built a 3D interactive bird flocking game in Processing.</p>
           </li>
@@ -227,7 +257,7 @@
     </div>
   </div>
 
-  <!-- 3Disk -->
+  <!-- Modal: 3Disk -->
   <div id="DISK" class="modal" aria-hidden="true" role="dialog">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('DISK')" aria-label="close">✕</button>
@@ -241,7 +271,7 @@
     </div>
   </div>
 
-  <!-- Martial Arts Tracker -->
+  <!-- Modal: Martial Arts Tracker -->
   <div id="martial" class="modal" aria-hidden="true" role="dialog">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('martial')" aria-label="close">✕</button>
@@ -257,7 +287,7 @@
     </div>
   </div>
 
-  <!-- Ultrasonic Flappy Bird -->
+  <!-- Modal: Ultrasonic Flappy Bird -->
   <div id="flappy" class="modal" aria-hidden="true" role="dialog">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('flappy')" aria-label="close">✕</button>
@@ -276,11 +306,12 @@
     </div>
   </div>
 
-  <!-- BeterMarkt -->
-  <div id="betermarkt" class="modal" aria-hidden="true" role="dialog">
+  <!-- Modal: 3D Flocking Bird Game -->
+  <div id="flocking" class="modal" aria-hidden="true" role="dialog">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('flocking')" aria-label="close">✕</button>
       <h2 class="blue">3D Flocking Bird Game</h2>
+      <p><strong>Module:</strong> Module 4 — Algorithms</p>
       <p><strong>What: </strong>An interactive 3D ecosystem where birds flock together using Craig Reynolds' flocking
         rules, fully implemented in three dimensions. The player can throw rocks at the birds, spawn new birds, and
         regenerate procedurally generated Perlin noise terrain.</p>
@@ -301,6 +332,20 @@
         terrain generation, and structuring complex programs with multiple interacting classes.</p>
     </div>
   </div>
+
+  <!-- Modal: BeterMarkt -->
+  <div id="betermarkt" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('betermarkt')" aria-label="close">✕</button>
+      <h2 class="blue">BeterMarkt</h2>
+      <p><strong>Type:</strong> Personal Project</p>
+      <p><strong>What:</strong> An improved search engine built on top of Marktplaats (the Dutch equivalent of
+        Craigslist/eBay). It automatically removes ads, promoted listings, and other irrelevant or unwanted results,
+        making second-hand searching much more efficient.</p>
+      <p><strong>My role:</strong> Solo Developer</p>
+      <p><strong>What I learned:</strong> Web scraping, search UX design, filtering logic, and building practical tools
+        that solve everyday frustrations.</p>
+    </div>
   </div>
 
   <script>
@@ -351,29 +396,7 @@
       letter-spacing: 0.05em;
       opacity: 0.8;
     }
-
-    .project-img-placeholder {
-      width: 100%;
-      aspect-ratio: 5/3;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3rem;
-      border-radius: 4px 4px 0 0;
-    }
-
-    .project-img-flappy {
-      background: #b3d9ff;
-    }
-
-    .project-img-martial {
-      background: #ffd6b3;
-    }
-
-    .project-img-betermarkt {
-      background: #d6f5d6;
-    }
   </style>
 </body>
 
-</html>◊
+</html>
