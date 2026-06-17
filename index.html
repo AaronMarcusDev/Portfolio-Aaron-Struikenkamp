@@ -5,8 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Aaron Struikenkamp CreaTe Portfolio</title>
-  <meta name="description"
-    content="Portfolio van Aaorn Struikenkamp, Creative Technology student" />
+  <meta name="description" content="Portfolio van Aaron Struikenkamp, Creative Technology student" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
@@ -47,7 +46,6 @@
           </div>
         </div>
         <div class="hero-image">
-          <!-- Replace with your photo or a project image -->
           <img src="images/profile.jpg" alt="Aaron Profile" />
         </div>
       </div>
@@ -58,7 +56,8 @@
       <div class="container">
         <h3 class="blue">About me</h3>
         <p>
-          I'm a <b class="blue">Creative Technology</b> student at the <b class="blue">University of Twente</b>. In this study I (will) expore
+          I'm a <b class="blue">Creative Technology</b> student at the <b class="blue">University of Twente</b>. In this
+          study I explore
           interaction design, prototyping, programming, and collaborative project work. I am a true problem-solver, I
           can get lost in thought easily and I come up with interesting technological solutions for existing problems.
         </p>
@@ -87,20 +86,9 @@
         <p class="muted">Here are some interesting projects I contributed to. Click "Read more" for details.</p>
 
         <div class="projects-grid">
-          <!-- Year 1 project example -->
-          <!-- <article class="project-card">
-            <img src="https://via.placeholder.com/600x360?text=Year+1+Project" alt="Year 1 project thumbnail" />
-            <div class="project-content">
-              <h4>Design for Behaviour Change</h4>
-              <p class="muted">Role: Research, Videographer & Editor</p>
-              <p>A video displaying the negative effects of video game addiction.</p>
-              <div class="project-actions">
-                <a href="#" class="btn btn-small" onclick="openModal(event, 'modal-yr1')">Read more</a>
-                <a href="#" class="btn btn-small btn-outline">View repo</a>
-              </div>
-          </article> -->
+          <!-- Whale Clean It Up -->
           <article class="project-card">
-            <img src="images/wcit.png" alt="Year 1 project thumbnail" />
+            <img src="images/wcit.png" alt="Whale Clean It Up thumbnail" />
             <div class="project-content">
               <h4>Whale Clean It Up!</h4>
               <p class="muted">Role: Programmer & Designer</p>
@@ -112,9 +100,25 @@
               </div>
             </div>
           </article>
-        </div> <!-- sluit .projects-grid -->
-      </div> <!-- sluit .container -->
-    </section> <!-- sluit #projects -->
+
+          <!-- 3D Flocking Bird Game (Algorithms) -->
+          <article class="project-card">
+            <img src="images/flocking-birds.png" alt="3D Flocking Bird Game thumbnail" />
+            <div class="project-content">
+              <h4>3D Flocking Bird Game</h4>
+              <p class="muted">Role: Programmer</p>
+              <p>An interactive 3D ecosystem with flocking birds, procedurally generated terrain, and physics-based rock
+                throwing.</p>
+              <div class="project-actions">
+                <a href="#" class="btn btn-small" onclick="openModal(event, 'flocking')">Read more</a>
+                <a href="https://github.com/AaronMarcusDev/Algorithms-Flocking" class="btn btn-small btn-outline">View
+                  repo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <!-- Timeline -->
     <section id="timeline" class="section">
@@ -122,9 +126,25 @@
         <h3 class="blue">Timeline</h3>
         <ol class="timeline">
           <li>
-            <strong>Year 1: Module 1 'Foundations of CreaTe'</strong>
+            <strong>Module 1: 'Foundations of CreaTe'</strong>
             <p>Intro projects, basic prototyping, programming, teamwork, first exposure to physical computing and design
               thinking.</p>
+          </li>
+          <li>
+            <strong>Module 2: 'Smart Environments'</strong>
+            <p>We covered electrical engineering, smart environment design and physical computing. Projects include
+              Ultrasonic Flappy Bird (Programming & Physical Computing) and Whale Clean It Up!</p>
+          </li>
+          <li>
+            <strong>Module 3: 'Living & Working Tomorrow'</strong>
+            <p>Working with real clients while gaining knowledge on mathematics, physics and human-centered design.
+              Projects include 3Disk (for Rijkswaterstaat) and the Martial Arts Kick Tracker (Professional Development).
+            </p>
+          </li>
+          <li>
+            <strong>Module 4 'Algorithms'</strong>
+            <p>Explored physics-based algorithms including flocking systems, particle systems, Perlin noise terrain
+              generation, and force-based interactions. Built a 3D interactive bird flocking game in Processing.</p>
           </li>
         </ol>
       </div>
@@ -145,21 +165,6 @@
                 rel="noopener">AaronMarcusDev</a></li>
           </ul>
         </div>
-        <!-- <form class="contact-form" action="#" onsubmit="alert('Form demo — replace action with your backend or remove.'); return false;">
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" placeholder="Your name" required />
-          </label>
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" placeholder="you@example.com" required />
-          </label>
-          <label>
-            <span>Message</span>
-            <textarea name="message" rows="4" placeholder="Hi, I'd like to..." required></textarea>
-          </label>
-          <button class="btn" type="submit">Send message</button>
-        </form> -->
       </div>
     </section>
   </main>
@@ -170,30 +175,45 @@
     </div>
   </footer>
 
-  <!-- Modals for project details (simple) -->
+  <!-- Modal: Whale Clean It Up -->
   <div id="wcit" class="modal" aria-hidden="true" role="dialog">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('wcit')" aria-label="close">✕</button>
       <h2 class="blue">Whale Clean It Up</h2>
       <p><strong>What: </strong>A game made solely in Processing about a whale cleaning the ocean.</p>
       <p><strong>My role: </strong>Ideation, Programming, Release</p>
-      <p><strong>What I learned: </strong>How to use Processing for creating 2d animations, sprites and game mechanics.
+      <p><strong>What I learned: </strong>How to use Processing for creating 2D animations, sprites and game mechanics.
       </p>
     </div>
   </div>
 
-  <!-- <div id="modal-yr2" class="modal" aria-hidden="true" role="dialog">
+  <!-- Modal: 3D Flocking Bird Game -->
+  <div id="flocking" class="modal" aria-hidden="true" role="dialog">
     <div class="modal-content">
-      <button class="modal-close" onclick="closeModal('modal-yr2')" aria-label="close">✕</button>
-      <h4>Year 2 — UX Case: "Study Buddy App"</h4>
-      <p><strong>What:</strong> App concept to manage study groups and resources.</p>
-      <p><strong>My role:</strong> Conducted interviews, created wireframes and high-fidelity prototype, organized usability tests.</p>
-      <p><strong>What I learned:</strong> User research methods, prototype iteration, presenting findings and design rationale.</p>
+      <button class="modal-close" onclick="closeModal('flocking')" aria-label="close">✕</button>
+      <h2 class="blue">3D Flocking Bird Game</h2>
+      <p><strong>What: </strong>An interactive 3D ecosystem where birds flock together using Craig Reynolds' flocking
+        rules, fully implemented in three dimensions. The player can throw rocks at the birds, spawn new birds, and
+        regenerate procedurally generated Perlin noise terrain.</p>
+      <p><strong>My role: </strong>Full implementation — designed and programmed all classes including Bird, Rock,
+        Terrain, ParticleSystem, and Menu.</p>
+      <p><strong>Key features:</strong></p>
+      <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+        <li>3D flocking with separation, alignment, and cohesion rules</li>
+        <li>Gaussian distribution for natural bird spawning</li>
+        <li>Perlin noise terrain generation with adjustable height</li>
+        <li>Physics-based rock throwing with gravity</li>
+        <li>Particle explosion system on collision</li>
+        <li>Interactive menu for terrain height control</li>
+      </ul>
+      <p><strong>Technologies used:</strong> Processing, PVector, Perlin noise, 3D transformations, Euler integration
+      </p>
+      <p><strong>What I learned:</strong> Advanced 3D programming, flocking algorithms, particle systems, procedural
+        terrain generation, and structuring complex programs with multiple interacting classes.</p>
     </div>
-  </div> -->
+  </div>
 
   <script>
-    // small helpers
     document.getElementById('year').textContent = new Date().getFullYear();
 
     const navToggle = document.querySelector('.nav-toggle');
@@ -213,7 +233,6 @@
       m.setAttribute('aria-hidden', 'true');
       m.classList.remove('open');
     }
-    // close on escape
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         document.querySelectorAll('.modal.open').forEach(m => {
